@@ -1,0 +1,19 @@
+{
+    "users":{
+        "alice":{
+            "firstName":"Alice",
+            "lastName":"ecila",
+            "role": "administrator"
+        },
+        "bob":{
+            "firstName":"Bob",
+            "lastName":"bob",
+            "role":"user"
+        },
+        "joe":{
+            "firstName":"Joe",
+            "lastName":"Shmoe",
+            "role": "restricted-administrator"
+        }
+    }
+}
