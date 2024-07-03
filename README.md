@@ -1,3 +1,13 @@
+# Directions for Project
+* **Day 3: GitHub User Search**
+        * **Lesson Topics:**
+            * Angular Forms and Form Validation
+    * Angular HTTP Interceptors
+ * ***Project (Single Dev): GitHub User Search***
+            * Create an application that allows users to search for GitHub users by username and display their profiles.
+    * Use Angular forms for user input.
+    * Fetch user profiles from the GitHub API based on search queries.
+    * Display search results dynamically.
 # GitHubUserSearchApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.7.
