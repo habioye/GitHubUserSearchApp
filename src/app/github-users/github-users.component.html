@@ -1,14 +1,33 @@
 <nav class="navbar navbar-light bg-light">
   <a routerLink="">
-    <img src="public/assets/images/navbar/github-logo.png" class = "logo" alt="image unavailable" />
+    <img href="https://cdn-icons-png.flaticon.com/512/25/25231.png" class="logo" alt="image unavailable" />
 
   </a>
-  <form class="form-inline" (ngSubmit)="search()" >
-    <input (ngModel)="input" name="input" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+  <form class="form-inline" (ngSubmit)="search()">
+    <input (ngModel)="input" name="input" class="form-control mr-sm-2" type="search" placeholder="Search"
+      aria-label="Search" required>
     <button class="btn btn-outline-success my-2 my-sm-0" type="submit" (click)="search()">Search</button>
   </form>
 </nav>
-<div *ngIf "search"
-<ng template>
-  
-</ng>
+<div class="userinformation">
+  <div *ngIf = "input.length > 0; else noSearch">
+    <div class="useritem">
+      <div class="card" style="width: 18rem;">
+        <img href="data.avatar_url" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">{{data.login}}</h5>
+          <h5 class="card-title">{{data.bio}}</h5>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">{{data.public_repos}}</li>
+          <li class="list-group-item">{{data.followers}}</li>
+          <li class="list-group-item">{{data.following}}</li>
+        </ul>
+      </div>
+    </div>
+
+</div>
+</div>
+<ng-template #noSearch>
+  You need to search
+</ng-template>
