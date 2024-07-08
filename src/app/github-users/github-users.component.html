@@ -1,1 +1,14 @@
-<p>github-users works!</p>
+<nav class="navbar navbar-light bg-light">
+  <a routerLink="">
+    <img src="public/assets/images/navbar/github-logo.png" class = "logo" alt="image unavailable" />
+
+  </a>
+  <form class="form-inline" (ngSubmit)="search()" >
+    <input (ngModel)="input" name="input" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+    <button class="btn btn-outline-success my-2 my-sm-0" type="submit" (click)="search()">Search</button>
+  </form>
+</nav>
+<div *ngIf "search"
+<ng template>
+  
+</ng>
